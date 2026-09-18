@@ -6,6 +6,7 @@ import Servicos from './pages/Servicos'
 import QuemSomos from './pages/QuemSomos'
 import Contato from './pages/Contato'
 import Header from './components/Header'
+import DetalhesCarro from './pages/DetalhesCarros'
 
 function AppRoutes(){
     return(
@@ -14,6 +15,7 @@ function AppRoutes(){
             <Routes>
                 <Route path='/' element={<Home/>}/>
                 <Route path='/carros' element={<Carros/>}/>
+                <Route path='/carros/:id' element={<DetalhesCarro/>}/>
                 <Route path='/servicos' element={<Servicos/>}/>
                 <Route path='/quem-somos' element={<QuemSomos/>}/>
                 <Route path='/contato' element={<Contato/>}/>
