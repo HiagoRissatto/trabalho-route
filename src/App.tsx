@@ -1,8 +1,10 @@
-
+import './routes.tsx'
 import './App.css'
+import AppRoutes from './routes.tsx'
 function App() {
   return (
     <>
+    <AppRoutes/>
     </>
   )
 }
