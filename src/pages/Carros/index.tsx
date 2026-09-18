@@ -103,7 +103,7 @@ function Carros() {
                                 </div>
 
                                 <Link
-                                    to="/carros/1"
+                                    to="/carros/civic"
                                     className="mt-6 flex w-full items-center justify-center gap-2 rounded-lg bg-red-600 px-5 py-3 font-semibold transition-all duration-300 hover:bg-red-700 group-hover:gap-3"
                                 >
                                     Ver detalhes
@@ -153,7 +153,7 @@ function Carros() {
                                 </div>
 
                                 <Link
-                                    to="/carros/2"
+                                    to="/carros/corolla"
                                     className="mt-6 flex w-full items-center justify-center gap-2 rounded-lg bg-red-600 px-5 py-3 font-semibold transition-all duration-300 hover:bg-red-700 group-hover:gap-3"
                                 >
                                     Ver detalhes
@@ -203,7 +203,7 @@ function Carros() {
                                 </div>
 
                                 <Link
-                                    to="/carros/3"
+                                    to="/carros/jetta"
                                     className="mt-6 flex w-full items-center justify-center gap-2 rounded-lg bg-red-600 px-5 py-3 font-semibold transition-all duration-300 hover:bg-red-700 group-hover:gap-3"
                                 >
                                     Ver detalhes

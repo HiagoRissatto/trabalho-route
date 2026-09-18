@@ -1,11 +1,11 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-
 import Home from './pages/Home'
 import Carros from './pages/Carros'
 import Servicos from './pages/Servicos'
 import QuemSomos from './pages/QuemSomos'
 import Contato from './pages/Contato'
 import Header from './components/Header'
+import Footer from './components/Footer'
 import DetalhesCarro from './pages/DetalhesCarros'
 
 function AppRoutes(){
@@ -20,6 +20,7 @@ function AppRoutes(){
                 <Route path='/quem-somos' element={<QuemSomos/>}/>
                 <Route path='/contato' element={<Contato/>}/>
             </Routes>
+            <Footer/>
         </BrowserRouter>
     )
 }
