@@ -1,75 +1,61 @@
-# React + TypeScript + Vite
+<p align="center">
+  <img src="./docs/home.png" alt="Home da MotorsDZ7" width="900">
+</p>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# MotorsDZ7
 
-Currently, two official plugins are available:
+Projeto desenvolvido para a atividade **Trabalho Individual React Router**.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+A proposta foi criar uma aplicação web de uma empresa fictícia utilizando **React**, **React Router** e **Tailwind CSS**, com foco na criação de rotas, navegação entre páginas e organização de componentes.
 
-## React Compiler
+## Sobre o projeto
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+A MotorsDZ7 é uma concessionária fictícia criada para o projeto.
 
-## Expanding the ESLint configuration
+A aplicação possui páginas para apresentação da empresa, veículos, serviços, informações institucionais e contato.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Também foi adicionada uma integração com uma API externa para realizar buscas de modelos de veículos Honda.
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## Tecnologias utilizadas
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+- React
+- TypeScript
+- React Router
+- Tailwind CSS
+- Vite
+- API vPIC
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## Páginas do projeto
 
-```
+### Home
 
-You can also install [eslint-plugin-react-x](https://npmx.dev/package/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://npmx.dev/package/eslint-plugin-react-dom) for React-specific lint rules:
+Página inicial da MotorsDZ7.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Contém:
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+- apresentação da empresa;
+- banner principal;
+- veículos em destaque;
+- informações sobre a empresa;
+- diferenciais;
+- links para outras páginas.
 
-```
+### Carros
+
+Página com veículos disponíveis.
+
+Possui:
+
+- Honda Civic;
+- Toyota Corolla;
+- Volkswagen Jetta;
+- cards com informações dos veículos;
+- links para detalhes;
+- busca de modelos utilizando API.
+
+### Detalhes do carro
+
+Utiliza uma rota dinâmica:
+
+```text
+/carros/:id
